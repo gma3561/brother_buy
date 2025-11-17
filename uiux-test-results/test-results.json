@@ -1,0 +1,230 @@
+{
+  "timestamp": "2025-11-12T05:01:57.454Z",
+  "url": "http://localhost:8080/index-new.html",
+  "viewports": {
+    "mobile": {
+      "name": "iPhone SE",
+      "size": "375x667",
+      "screenshots": {
+        "fullPage": "mobile-fullpage.png",
+        "hero": "mobile-hero.png",
+        "features": "mobile-features.png"
+      },
+      "elements": {
+        "navbar": {
+          "visible": true,
+          "logo": true,
+          "menu": true
+        },
+        "mobileMenuButton": true,
+        "hero": {
+          "title": true,
+          "subtitle": true,
+          "buttons": true
+        },
+        "heroTitleText": "상품권은브라더상품권",
+        "featureCardsCount": 6,
+        "brandItemsCount": 6,
+        "galleryItemsCount": 8,
+        "ctaButton": true,
+        "contactForm": {
+          "visible": true,
+          "nameInput": true,
+          "phoneInput": true
+        },
+        "footer": true,
+        "floatingCallButton": true
+      },
+      "issues": [],
+      "metrics": {
+        "totalHeight": 11034,
+        "viewportHeight": 667,
+        "scrollable": true
+      }
+    },
+    "mobileLarge": {
+      "name": "iPhone 12 Pro",
+      "size": "414x896",
+      "screenshots": {
+        "fullPage": "mobileLarge-fullpage.png",
+        "hero": "mobileLarge-hero.png",
+        "features": "mobileLarge-features.png"
+      },
+      "elements": {
+        "navbar": {
+          "visible": true,
+          "logo": true,
+          "menu": true
+        },
+        "mobileMenuButton": true,
+        "hero": {
+          "title": true,
+          "subtitle": true,
+          "buttons": true
+        },
+        "heroTitleText": "상품권은브라더상품권",
+        "featureCardsCount": 6,
+        "brandItemsCount": 6,
+        "galleryItemsCount": 8,
+        "ctaButton": true,
+        "contactForm": {
+          "visible": true,
+          "nameInput": true,
+          "phoneInput": true
+        },
+        "footer": true,
+        "floatingCallButton": true
+      },
+      "issues": [],
+      "metrics": {
+        "totalHeight": 11396,
+        "viewportHeight": 896,
+        "scrollable": true
+      }
+    },
+    "tablet": {
+      "name": "iPad",
+      "size": "768x1024",
+      "screenshots": {
+        "fullPage": "tablet-fullpage.png",
+        "hero": "tablet-hero.png",
+        "features": "tablet-features.png"
+      },
+      "elements": {
+        "navbar": {
+          "visible": true,
+          "logo": true,
+          "menu": true
+        },
+        "hero": {
+          "title": true,
+          "subtitle": true,
+          "buttons": true
+        },
+        "heroTitleText": "상품권은브라더상품권",
+        "featureCardsCount": 6,
+        "brandItemsCount": 6,
+        "galleryItemsCount": 8,
+        "ctaButton": true,
+        "contactForm": {
+          "visible": true,
+          "nameInput": true,
+          "phoneInput": true
+        },
+        "footer": true,
+        "floatingCallButton": true
+      },
+      "issues": [],
+      "metrics": {
+        "totalHeight": 8472,
+        "viewportHeight": 1024,
+        "scrollable": true
+      }
+    },
+    "desktop": {
+      "name": "Desktop FHD",
+      "size": "1920x1080",
+      "screenshots": {
+        "fullPage": "desktop-fullpage.png",
+        "hero": "desktop-hero.png",
+        "features": "desktop-features.png"
+      },
+      "elements": {
+        "navbar": {
+          "visible": true,
+          "logo": true,
+          "menu": true
+        },
+        "hero": {
+          "title": true,
+          "subtitle": true,
+          "buttons": true
+        },
+        "heroTitleText": "상품권은브라더상품권",
+        "featureCardsCount": 6,
+        "brandItemsCount": 6,
+        "galleryItemsCount": 8,
+        "ctaButton": true,
+        "contactForm": {
+          "visible": true,
+          "nameInput": true,
+          "phoneInput": true
+        },
+        "footer": true
+      },
+      "issues": [],
+      "metrics": {
+        "totalHeight": 5789,
+        "viewportHeight": 1080,
+        "scrollable": true
+      }
+    }
+  },
+  "interactions": {
+    "mobileMenu": {
+      "tested": true,
+      "passed": true,
+      "details": "Initial: hidden=true, After click: opened=true"
+    },
+    "smoothScroll": {
+      "tested": true,
+      "passed": true,
+      "details": "Scrolled from 0px to 1010px"
+    },
+    "galleryModal": {
+      "tested": true,
+      "passed": true,
+      "details": "Modal: true, Image: true"
+    },
+    "contactForm": {
+      "tested": true,
+      "passed": true,
+      "details": "Phone formatting: Working (010-1234-5678)"
+    }
+  },
+  "accessibility": {
+    "images": {
+      "tested": true,
+      "passed": false,
+      "details": "22/23 images have alt text"
+    },
+    "links": {
+      "tested": true,
+      "passed": false,
+      "details": "12/13 links have text/aria-label"
+    },
+    "forms": {
+      "tested": true,
+      "passed": true,
+      "details": "4/4 form elements have labels"
+    },
+    "headings": {
+      "tested": true,
+      "passed": true,
+      "details": "Found 22 headings, H1: true"
+    }
+  },
+  "performance": {
+    "loadMetrics": {
+      "loadTime": 22.700000002980232,
+      "domContentLoaded": 4.899999991059303,
+      "domInteractive": 4.899999991059303
+    },
+    "resources": {
+      "total": 30,
+      "images": 15,
+      "scripts": 1,
+      "stylesheets": 14
+    },
+    "pageSize": {
+      "bytes": 0,
+      "kilobytes": 0,
+      "megabytes": "0.00"
+    }
+  },
+  "issues": [],
+  "recommendations": [
+    "Add alt text to all images for better accessibility",
+    "Ensure all links have descriptive text or aria-labels"
+  ]
+}

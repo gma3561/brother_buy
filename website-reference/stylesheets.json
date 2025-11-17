@@ -1,0 +1,90 @@
+[
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/bootstrap/css/bootstrap.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/owl-carousel/owl.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/Swiper/css/swiper.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/owl-carousel/assets/owl.carousel.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/vegas/vegas.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/Magnific-Popup/magnific-popup.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/sweetalert/sweetalert2.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/lib/materialize-parallax/materialize-parallax.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/fonts/fontawesome-all.min.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/fonts/pe-icon-7-stroke.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/fonts/et-line-font.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/animate.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/main.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/ckav-grids.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/helper.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/responsive.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/themes/theme-01.css"
+  },
+  {
+    "type": "link",
+    "href": "https://brothergift.free.nowhosting.kr/css/template-custom.css"
+  },
+  {
+    "type": "link",
+    "href": "https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+  },
+  {
+    "type": "inline",
+    "content": ".f-1 { font-family: \"Montserrat\"; }.f-2 { font-family: \"Open Sans\"; }"
+  },
+  {
+    "type": "inline",
+    "content": "\n  @media (max-width: 1024px) {\n    #excel-price h2.title {\n      font-size: 1.6rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.9rem !important;\n    }\n    #excel-price iframe {\n      height: 800px !important;\n    }\n  }\n\n  @media (max-width: 768px) {\n    #excel-price h2.title {\n      font-size: 1.4rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.8rem !important;\n    }\n    #excel-price iframe {\n      height: 900px !important;\n    }\n    #excel-price a {\n      font-size: 0.95rem !important;\n      padding: 9px 18px !important;\n    }\n  }\n\n  @media (max-width: 480px) {\n    #excel-price h2.title {\n      font-size: 1.2rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.75rem !important;\n    }\n    #excel-price iframe {\n      height: 950px !important;\n    }\n    #excel-price a {\n      font-size: 0.9rem !important;\n      padding: 8px 16px !important;\n    }\n  }\n"
+  }
+]

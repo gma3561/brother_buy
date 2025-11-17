@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라더상품권 - 온라인 상품권 매입</title>
+    <meta name="description" content="백화점 상품권 온라인 즉시 매입. 앱 다운로드 없이 핀번호 입력만으로 3분 안에 현금 입금">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style-online.css">
+
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        // Supabase 클라이언트 초기화
+        const SUPABASE_URL = 'https://jzuyxmyqkpkxgtpyvoal.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6dXl4bXlxa3BreGd0cHl2b2FsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI0MDgxMTUsImV4cCI6MjA3Nzk4NDExNX0.2v2KspejpKy4MGVCO-IerzYKxNh-lgLFco3cFeIk4ws';
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <img src="images/logo-light.png" alt="브라더상품권" class="logo-img">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">홈</a></li>
+                    <li><a href="#features" class="nav-link">매입절차</a></li>
+                    <li><a href="#brands" class="nav-link">매입브랜드</a></li>
+                    <li><a href="#pricing" class="nav-link">시세조회</a></li>
+                    <li><a href="#apply" class="nav-link">매입신청</a></li>
+                </ul>
+
+                <a href="#apply" class="btn-apply-desktop">
+                    <i class="fas fa-coins"></i>
+                    <span>즉시 매입</span>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    온라인<br>상품권 매입
+                </h1>
+                <h2 class="hero-subtitle">
+                    앱 다운로드 없이 핀번호만 입력<br>
+                    3분 안에 현금 입금
+                </h2>
+                <p class="hero-description">
+                    현대백화점 · 갤러리아백화점 · 롯데백화점 · 신세계백화점<br>
+                    모든 백화점 상품권을 24시간 최고가로 매입합니다
+                </p>
+                <div class="hero-buttons">
+                    <a href="#apply" class="btn btn-primary">
+                        <i class="fas fa-coins"></i>
+                        <span>즉시 매입 신청</span>
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary">
+                        <i class="fas fa-chart-line"></i>
+                        <span>시세 확인</span>
+                    </a>
+                </div>
+
+                <!-- Brand Logos Carousel -->
+                <div class="brand-logos">
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo1_light.png" alt="현대백화점">
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo2_light.png" alt="갤러리아백화점">
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo3_light.png" alt="롯데백화점">
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo4_light.png" alt="신세계백화점">
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo5_light.png" alt="AK플라자">
+                    </div>
+                    <div class="brand-logo-item">
+                        <img src="images/brand-logo6_light.png" alt="한화갤러리아">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">브라더상품권, 이렇게 다릅니다</h2>
+            <p class="section-subtitle">온라인 상품권 매입, 믿고 사용할 수 있는 이유</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="feature-title">최고가 매입</h3>
+                    <p class="feature-description">
+                        업계 최고 매입가 보장<br>
+                        실시간 시세 확인 가능<br>
+                        타사 대비 높은 매입률
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">3분 입금</h3>
+                    <p class="feature-description">
+                        핀번호 확인 후<br>
+                        3분 안에 계좌 입금<br>
+                        빠른 현금화 보장
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">안전한 거래</h3>
+                    <p class="feature-description">
+                        PIN 번호 암호화 처리<br>
+                        개인정보 완벽 보호<br>
+                        사기 걱정 없는 직거래
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 class="feature-title">24시간 운영</h3>
+                    <p class="feature-description">
+                        365일 연중무휴<br>
+                        새벽에도 매입 가능<br>
+                        언제든 즉시 현금화
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">간편 신청</h3>
+                    <p class="feature-description">
+                        앱 다운로드 불필요<br>
+                        웹에서 바로 신청<br>
+                        복잡한 인증 없음
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="feature-title">다양한 브랜드</h3>
+                    <p class="feature-description">
+                        모든 백화점 상품권<br>
+                        대형마트 상품권<br>
+                        온라인 쿠폰까지
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <h2 class="section-title">취급 상품권</h2>
+            <p class="section-subtitle">주요 백화점 및 대형마트 상품권 매입</p>
+
+            <div class="brand-grid">
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo1_light.png" alt="현대백화점 상품권">
+                    </div>
+                    <h3 class="brand-name">현대백화점</h3>
+                    <p class="brand-rate">최대 96.5%</p>
+                </div>
+
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo2_light.png" alt="갤러리아백화점 상품권">
+                    </div>
+                    <h3 class="brand-name">갤러리아</h3>
+                    <p class="brand-rate">최대 96.5%</p>
+                </div>
+
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo3_light.png" alt="롯데백화점 상품권">
+                    </div>
+                    <h3 class="brand-name">롯데백화점</h3>
+                    <p class="brand-rate">최대 96.0%</p>
+                </div>
+
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo4_light.png" alt="신세계백화점 상품권">
+                    </div>
+                    <h3 class="brand-name">신세계백화점</h3>
+                    <p class="brand-rate">최대 96.5%</p>
+                </div>
+
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo5_light.png" alt="AK플라자 상품권">
+                    </div>
+                    <h3 class="brand-name">AK플라자</h3>
+                    <p class="brand-rate">최대 95.5%</p>
+                </div>
+
+                <div class="brand-item">
+                    <div class="brand-image-wrapper">
+                        <img src="images/brand-logo6_light.png" alt="한화갤러리아 상품권">
+                    </div>
+                    <h3 class="brand-name">한화갤러리아</h3>
+                    <p class="brand-rate">최대 96.0%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">오늘의 매입 시세</h2>
+            <p class="section-subtitle-white">
+                실시간 변동 가능, 정확한 가격은 신청 시 확인<br>
+                상품권 상태에 따라 매입가가 달라질 수 있습니다
+            </p>
+            <a href="#apply" class="btn-cta">
+                <i class="fas fa-calculator"></i>
+                <span>정확한 가격 확인하기</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">갤러리</h2>
+            <p class="section-subtitle">브라더상품권 매입 사진</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery1.png" alt="상품권 매입 사진 1" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery2.png" alt="상품권 매입 사진 2" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery3.png" alt="상품권 매입 사진 3" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery4.png" alt="상품권 매입 사진 4" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery5.png" alt="상품권 매입 사진 5" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery6.png" alt="상품권 매입 사진 6" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery7.png" alt="상품권 매입 사진 7" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery8.png" alt="상품권 매입 사진 8" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section (Contact Form Updated) -->
+    <section class="apply" id="apply">
+        <div class="container">
+            <h2 class="section-title">매입 신청하기</h2>
+            <p class="section-subtitle">아래 정보를 입력하시면 빠르게 처리해드립니다</p>
+
+            <div class="apply-wrapper">
+                <div class="apply-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>매입 가능 상품권</h3>
+                            <p>
+                                백화점: 현대, 롯데, 신세계, 갤러리아 등<br>
+                                대형마트: 이마트, 홈플러스, 롯데마트<br>
+                                기타: 온라인 쿠폰 및 모바일 상품권
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>처리 시간</h3>
+                            <p>
+                                접수 후 핀번호 확인<br>
+                                확인 완료 후 3분 이내 입금<br>
+                                24시간 365일 운영
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>문의 전화</h3>
+                            <p>
+                                <a href="tel:010-8188-0656" class="info-link">010-8188-0656</a><br>
+                                <a href="tel:02-541-0656" class="info-link">02-541-0656</a><br>
+                                급한 경우 전화 문의 주세요
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="apply-form" id="applyForm">
+                    <div class="form-group">
+                        <label for="brand">상품권 종류 *</label>
+                        <select id="brand" name="brand" required>
+                            <option value="">선택해주세요</option>
+                            <option value="hyundai">현대백화점</option>
+                            <option value="galleria">갤러리아백화점</option>
+                            <option value="lotte">롯데백화점</option>
+                            <option value="shinsegae">신세계백화점</option>
+                            <option value="ak">AK플라자</option>
+                            <option value="hanwha">한화갤러리아</option>
+                            <option value="emart">이마트</option>
+                            <option value="other">기타 (직접 입력)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">상품권 금액 *</label>
+                        <input type="number" id="amount" name="amount" placeholder="예: 100000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">성함 *</label>
+                        <input type="text" id="name" name="name" placeholder="홍길동" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">연락처 *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account">입금 계좌번호 *</label>
+                        <input type="text" id="account" name="account" placeholder="은행명 및 계좌번호" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pin">상품권 PIN 번호 *</label>
+                        <input type="text" id="pin" name="pin" placeholder="16자리 핀번호 (숫자만)" required>
+                        <small>PIN 번호는 암호화되어 안전하게 처리됩니다</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">추가 요청사항</label>
+                        <textarea id="message" name="message" rows="4" placeholder="추가로 전달하실 내용이 있으시면 작성해주세요"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>매입 신청하기</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-light.png" alt="브라더상품권" class="footer-logo-img">
+                </div>
+                <div class="footer-info">
+                    <p>브라더상품권 온라인 매입</p>
+                    <p>사업자등록번호: 000-00-00000 | 대표: 홍길동</p>
+                    <p>서울시 강남구 압구정로 000 (논현동)</p>
+                    <p>전화: 02-541-0656 | 모바일: 010-8188-0656</p>
+                    <p class="footer-copyright">© 2024 brothergift.co.kr. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Apply Button (Mobile) -->
+    <a href="#apply" class="floating-apply-btn" id="floatingApplyBtn">
+        <span class="apply-icon"><i class="fas fa-coins"></i></span>
+        <span class="apply-text">매입신청</span>
+    </a>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script-online.js"></script>
+</body>
+</html>
