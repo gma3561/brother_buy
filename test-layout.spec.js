@@ -31,7 +31,7 @@ test.describe('브라더상품권 핀매입 페이지 레이아웃 테스트', (
         // 운영시간 확인
         const time = page.locator('.header-time');
         await expect(time).toBeVisible();
-        await expect(time).toContainText('평일 09:00 - 18:00');
+        await expect(time).toContainText('평일 08:00 - 22:00');
     });
 
     test('메인 레이아웃 구조 확인', async ({ page }) => {
@@ -225,7 +225,7 @@ test.describe('브라더상품권 핀매입 페이지 레이아웃 테스트', (
 
         // 운영시간 확인
         const footerTime = page.locator('.footer-time');
-        await expect(footerTime).toContainText('평일 09:00 - 18:00');
+        await expect(footerTime).toContainText('평일 08:00 - 22:00');
     });
 
     test('데스크탑 레이아웃 확인', async ({ page }) => {

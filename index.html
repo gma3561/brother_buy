@@ -86,6 +86,12 @@
             object-fit: contain;
         }
 
+        @media (max-width: 768px) {
+            .logo-mark {
+                height: 48px;
+            }
+        }
+
         .nav-menu {
             display: flex;
             align-items: center;
@@ -737,23 +743,31 @@
             }
 
             .header-inner {
-                flex-direction: column;
-                gap: 18px;
-                align-items: flex-start;
+                padding: 12px 0;
+                gap: 12px;
             }
 
             .nav-menu {
-                order: 3;
-                width: 100%;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                margin-left: 0;
+                display: none;
             }
 
             .header-actions {
-                width: 100%;
-                flex-direction: column;
-                align-items: flex-start;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .contact-chip {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+            .chip-label {
+                display: none;
+            }
+
+            .time-chip {
+                padding: 8px 14px;
+                font-size: 12px;
             }
 
             .hero h1 {
@@ -778,6 +792,30 @@
                 align-items: flex-start;
             }
         }
+
+        @media (max-width: 390px) {
+            .header-inner {
+                padding: 10px 0;
+            }
+
+            .logo-mark {
+                height: 40px;
+            }
+
+            .contact-chip,
+            .time-chip {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: calc(100% - 32px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -797,7 +835,7 @@
                     <span class="chip-label">Contact</span>
                     <strong>02-541-0656</strong>
                 </a>
-                <div class="time-chip">평일 09:00 - 18:00 · 압구정 본점</div>
+                <div class="time-chip">평일 08:00 - 22:00 · 압구정 본점</div>
             </div>
         </div>
     </header>
@@ -1019,7 +1057,7 @@
         <div class="container footer-inner">
             <div>
                 <div class="footer-contact">02-541-0656</div>
-                <div class="footer-meta">평일 09:00 - 18:00 (토/일/공휴일 휴무)</div>
+                <div class="footer-meta">평일 08:00 - 22:00 (토/일/공휴일 휴무)</div>
             </div>
             <div class="footer-meta">
                 브라더상품권 · 안전하고 빠른 상품권 매입 서비스<br>
