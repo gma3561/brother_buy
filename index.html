@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라더상품권 - 핀번호 즉시매입 | 최고가 96.5%</title>
+    <meta name="description" content="핀번호만 입력하면 3분 이내 현금 입금! 최고가 매입률 96.5%">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        const SUPABASE_URL = 'https://jzuyxmyqkpkxgtpyvoal.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6dXl4bXlxa3BreGd0cHl2b2FsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI0MDgxMTUsImV4cCI6MjA3Nzk4NDExNX0.2v2KspejpKy4MGVCO-IerzYKxNh-lgLFco3cFeIk4ws';
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    </script>
+
+    <style>
+        :root {
+            --primary: #0047ff;
+            --primary-dark: #0033cc;
+            --accent: #0ad5a4;
+            --bg: #f5f6fb;
+            --text: #0f172a;
+            --muted: #5c667b;
+            --border: #e4e7ec;
+            --card: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1200px, calc(100% - 80px));
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-mark {
+            height: 68px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .logo-mark {
+                height: 48px;
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-left: auto;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-menu a {
+            color: #475467;
+            padding-bottom: 6px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .contact-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #eef2ff;
+            color: var(--primary);
+            border-radius: 999px;
+            padding: 10px 20px;
+            font-weight: 700;
+            border: 1px solid rgba(0, 71, 255, 0.12);
+        }
+
+        .chip-label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .time-chip {
+            padding: 10px 20px;
+            border-radius: 999px;
+            background: #f0f2f5;
+            color: #1d2939;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        .hero {
+            background: radial-gradient(circle at top left, rgba(0, 71, 255, 0.25), transparent 50%),
+                        radial-gradient(circle at top right, rgba(10, 213, 164, 0.16), transparent 45%),
+                        linear-gradient(115deg, #08183e, #051133 45%, #040a21);
+            color: #ffffff;
+            padding: 80px 0 120px;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-eyebrow {
+            letter-spacing: 4px;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+            line-height: 1.25;
+        }
+
+        .hero-text {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.82);
+            margin-bottom: 30px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #ffffff;
+            color: var(--primary);
+            border-radius: 16px;
+            padding: 16px 26px;
+            font-weight: 700;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(120px, 1fr));
+            gap: 18px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .stat-card p {
+            margin: 0;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .stat-card strong {
+            display: block;
+            margin-top: 12px;
+            font-size: 26px;
+        }
+
+        .stat-card span {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .hero-visual {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 32px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        }
+
+        .hero-rate-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-rate-card p {
+            margin: 0;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .hero-rate {
+            font-size: 64px;
+            font-weight: 900;
+            margin: 10px 0;
+        }
+
+        .interaction-grid {
+            margin-top: -60px;
+            padding: 0 0 80px;
+        }
+
+        .interaction-grid .inner {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .card .eyebrow {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .status-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .status-header-left {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ff5a59;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            width: fit-content;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.4); }
+        }
+
+        .today-count {
+            text-align: right;
+        }
+
+        .today-count span {
+            display: block;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .today-count strong {
+            font-size: 32px;
+            display: block;
+            line-height: 1;
+        }
+
+        .realtime-list {
+            max-height: 420px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .realtime-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .realtime-list::-webkit-scrollbar-thumb {
+            background: #d0d5dd;
+            border-radius: 10px;
+        }
+
+        .realtime-item {
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .realtime-phone {
+            font-weight: 700;
+            font-size: 15px;
+            color: #0f172a;
+        }
+
+        .realtime-details {
+            font-size: 14px;
+            color: var(--muted);
+            margin: 6px 0;
+        }
+
+        .realtime-amount {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .realtime-time {
+            font-size: 12px;
+            color: #98a2b3;
+        }
+
+        .summary-card {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            padding: 24px 28px;
+            background: linear-gradient(120deg, #f7f9ff, #f0fdf8);
+        }
+
+        .summary-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .summary-item span {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 0.5px;
+        }
+
+        .summary-item strong {
+            font-size: 20px;
+            color: var(--text);
+        }
+
+        .form-card h2 {
+            font-size: 28px;
+            margin: 8px 0 10px;
+        }
+
+        .form-card p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .form-section-title {
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .form-section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .brand-grid {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .brand-item {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+        }
+
+        .brand-item:hover {
+            border-color: var(--primary);
+            background: #f7f9ff;
+        }
+
+        .brand-item.selected {
+            border-color: var(--primary);
+            background: #eef2ff;
+            box-shadow: 0 4px 12px rgba(0, 71, 255, 0.12);
+        }
+
+        .brand-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .brand-rate {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        form {
+            margin-top: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        .form-input {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            font-size: 16px;
+            transition: border 0.2s ease;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 71, 255, 0.1);
+        }
+
+        .calculation-display {
+            background: #0f172a;
+            color: #fff;
+            padding: 24px;
+            border-radius: 18px;
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease, margin 0.4s ease, max-height 0.4s ease;
+        }
+
+        .calculation-display.show {
+            margin: 20px 0 24px;
+            max-height: 300px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .calc-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .calc-row:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .calc-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .calc-value {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .calc-payment {
+            font-size: 26px;
+            color: #0ad5a4;
+        }
+
+        .btn-submit {
+            width: 100%;
+            border: none;
+            border-radius: 16px;
+            background: linear-gradient(120deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px;
+            cursor: pointer;
+            box-shadow: 0 20px 40px rgba(0, 71, 255, 0.35);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-submit:disabled {
+            background: #cbd5f5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .info-section {
+            padding: 30px 0 90px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .info-card {
+            background: var(--card);
+            padding: 28px;
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.06);
+        }
+
+        .info-card h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+
+        .info-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .process-section {
+            padding: 0 0 90px;
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .process-header .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .process-header h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .process-header p {
+            margin-top: 12px;
+            color: var(--muted);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .process-card {
+            padding: 28px;
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: var(--card);
+            box-shadow: 0 30px 60px rgba(15, 23, 42, 0.06);
+        }
+
+        .process-step {
+            display: inline-flex;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: #eef2ff;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .process-card h3 {
+            margin: 6px 0 10px;
+            font-size: 20px;
+        }
+
+        .process-card p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        footer {
+            background: #0f172a;
+            color: rgba(255, 255, 255, 0.75);
+            padding: 40px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-contact {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .footer-meta {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        @media (max-width: 1100px) {
+            .hero-inner,
+            .interaction-grid .inner {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-bottom: 80px;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            }
+
+            .interaction-grid {
+                margin-top: -20px;
+                padding-bottom: 60px;
+            }
+
+            .summary-card {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: calc(100% - 40px);
+            }
+
+            .header-inner {
+                padding: 12px 0;
+                gap: 12px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .header-actions {
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .contact-chip {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+            .chip-label {
+                display: none;
+            }
+
+            .time-chip {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .header-inner {
+                padding: 10px 0;
+            }
+
+            .logo-mark {
+                height: 40px;
+            }
+
+            .contact-chip,
+            .time-chip {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: calc(100% - 32px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo-group">
+                <img src="images/logo/brother-logo.jpg" alt="브라더상품권" class="logo-mark">
+            </div>
+            <nav class="nav-menu">
+                <a href="#status">실시간 현황</a>
+                <a href="#apply">핀 매입 신청</a>
+                <a href="#info">센터 안내</a>
+                <a href="#process">진행 절차</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:02-541-0656" class="contact-chip">
+                    <span class="chip-label">Contact</span>
+                    <strong>02-541-0656</strong>
+                </a>
+                <div class="time-chip">평일 08:00 - 22:00 · 압구정 본점</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-inner">
+                <div>
+                    <p class="hero-eyebrow">PREMIUM BROTHER SERVICE</p>
+                    <h1>브라더상품권 핀번호 즉시 매입</h1>
+                    <p class="hero-text">핀번호만 입력하면 3분 이내 입금까지 완료되는 프리미엄 데스크탑 매입 센터. 업계 최고가 매입률과 안전한 프로세스로 신뢰를 쌓았습니다.</p>
+                    <div class="hero-actions">
+                        <a href="tel:02-541-0656" class="hero-call">
+                            <i class="fas fa-phone"></i>
+                            <span>대표번호로 바로 문의</span>
+                        </a>
+                        <div class="hero-meta">
+                            <span>실시간 매입 상담 · 오프라인 매장 운영</span>
+                            <span>평일 오전 9시 - 오후 6시 / 토·일·공휴일 휴무</span>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <p>최고 매입률</p>
+                            <strong>96.5%</strong>
+                            <span>브랜드별 맞춤 제시</span>
+                        </div>
+                        <div class="stat-card">
+                            <p>입금 소요시간</p>
+                            <strong>3분 이내</strong>
+                            <span>핀 검수 즉시 송금</span>
+                        </div>
+                        <div class="stat-card">
+                            <p>누적 거래</p>
+                            <strong>18,452건</strong>
+                            <span>고객 만족 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-rate-card">
+                        <p>오늘의 최고 매입률</p>
+                        <div class="hero-rate" id="currentRate">96.5%</div>
+                        <p>브랜드 선택 시 실시간 반영</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interaction-grid" id="status">
+            <div class="container inner">
+                <div>
+                    <div class="card status-card">
+                        <div class="status-card-header">
+                            <div class="status-header-left">
+                                <div class="eyebrow">LIVE STATUS</div>
+                                <h3>실시간 매입현황</h3>
+                                <div class="live-badge">
+                                    <span class="live-dot"></span>
+                                    운영 중
+                                </div>
+                            </div>
+                            <div class="today-count">
+                                <span>오늘 처리</span>
+                                <strong id="todayCount">0</strong>
+                            </div>
+                        </div>
+                        <div class="realtime-list" id="realtimeList"></div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-item">
+                            <span>브라더 직영 센터</span>
+                            <strong>압구정 본점</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>평균 검수 속도</span>
+                            <strong>2분 40초</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>금일 입금 완료</span>
+                            <strong>100%</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="card form-card" id="apply">
+                    <div class="eyebrow">PIN PURCHASE</div>
+                    <h2>매입 핀 입력</h2>
+                    <p>브랜드 선택부터 계좌 입력까지 한 번에. 데스크탑 레이아웃으로 빠르게 신청하세요.</p>
+
+                    <form id="applyForm">
+                        <input type="hidden" id="brand" name="brand">
+                        <input type="hidden" id="buyRate" name="buyRate">
+
+                        <div class="form-section-title">01. 상품권 종류 선택</div>
+                        <div class="brand-grid">
+                            <div class="brand-item" data-brand="hyundai" data-rate="96.5">
+                                <div class="brand-name">현대백화점</div>
+                                <div class="brand-rate">96.5%</div>
+                            </div>
+                            <div class="brand-item" data-brand="galleria" data-rate="96.0">
+                                <div class="brand-name">갤러리아</div>
+                                <div class="brand-rate">96.0%</div>
+                            </div>
+                            <div class="brand-item" data-brand="shinsegae" data-rate="96.3">
+                                <div class="brand-name">신세계</div>
+                                <div class="brand-rate">96.3%</div>
+                            </div>
+                            <div class="brand-item" data-brand="lotte" data-rate="95.8">
+                                <div class="brand-name">롯데백화점</div>
+                                <div class="brand-rate">95.8%</div>
+                            </div>
+                            <div class="brand-item" data-brand="hanwha" data-rate="96.2">
+                                <div class="brand-name">한화갤러리아</div>
+                                <div class="brand-rate">96.2%</div>
+                            </div>
+                            <div class="brand-item" data-brand="ak" data-rate="95.5">
+                                <div class="brand-name">AK플라자</div>
+                                <div class="brand-rate">95.5%</div>
+                            </div>
+                            <div class="brand-item" data-brand="emart" data-rate="94.8">
+                                <div class="brand-name">이마트</div>
+                                <div class="brand-rate">94.8%</div>
+                            </div>
+                            <div class="brand-item" data-brand="cultureland" data-rate="93.5">
+                                <div class="brand-name">컬처랜드</div>
+                                <div class="brand-rate">93.5%</div>
+                            </div>
+                        </div>
+
+                        <div class="form-section-title">02. 핀번호 및 금액</div>
+                        <div class="form-group">
+                            <label class="form-label" for="pin">핀번호 (16자리)</label>
+                            <input type="text" id="pin" name="pin" class="form-input" placeholder="0000-0000-0000-0000" maxlength="19" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="amount">상품권 금액</label>
+                            <input type="text" id="amount" name="amount" class="form-input" placeholder="예) 100,000" required>
+                        </div>
+
+                        <div id="calculationDisplay" class="calculation-display">
+                            <div class="calc-row">
+                                <span class="calc-label">상품권 금액</span>
+                                <span class="calc-value" id="displayAmount">0원</span>
+                            </div>
+                            <div class="calc-row">
+                                <span class="calc-label">매입률</span>
+                                <span class="calc-value" id="displayRate">0%</span>
+                            </div>
+                            <div class="calc-row">
+                                <span class="calc-label">입금 받으실 금액</span>
+                                <span class="calc-value calc-payment" id="displayPayment">0원</span>
+                            </div>
+                        </div>
+
+                        <div class="form-section-title">03. 고객 정보</div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">휴대폰 번호</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="010-0000-0000" maxlength="13" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="account">입금받을 계좌</label>
+                            <input type="text" id="account" name="account" class="form-input" placeholder="은행명 계좌번호 예금주" required>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-check-circle"></i> 즉시 매입 신청하기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section" id="info">
+            <div class="container info-grid">
+                <div class="info-card">
+                    <h3>오프라인 본점 운영</h3>
+                    <p>압구정 매장에서 직접 검수 및 정산을 진행하여 믿을 수 있는 서비스를 제공합니다.</p>
+                </div>
+                <div class="info-card">
+                    <h3>암호화된 핀 관리</h3>
+                    <p>핀번호는 암호화되어 저장되며, 검수 완료 즉시 폐기되어 안심하고 맡기실 수 있습니다.</p>
+                </div>
+                <div class="info-card">
+                    <h3>데스크탑 최적화</h3>
+                    <p>고고핀24 스타일의 넓은 데스크탑 레이아웃으로 여러 건을 더욱 빠르게 신청할 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section" id="process">
+            <div class="container">
+                <div class="process-header">
+                    <p class="eyebrow">WORKFLOW</p>
+                    <h2>온라인 매입 진행 절차</h2>
+                    <p>데스크탑 환경에서 더 빠르고 깔끔하게, 동일한 담당자가 처음부터 끝까지 책임집니다.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-card">
+                        <span class="process-step">STEP 01</span>
+                        <h3>핀번호 & 브랜드 접수</h3>
+                        <p>브랜드 선택 → 핀 입력 → 금액 계산까지 한 번에 완료해 접수 시간을 줄였습니다.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-step">STEP 02</span>
+                        <h3>실시간 검수 & 매입률 안내</h3>
+                        <p>실시간 현황판에 거래가 기록되며, 안내 받은 매입률 그대로 정산을 진행합니다.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-step">STEP 03</span>
+                        <h3>3분 내 정산 완료</h3>
+                        <p>검수 직후 계좌로 즉시 입금하고, 완료 알림과 함께 거래 내역을 투명하게 공유합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-contact">02-541-0656</div>
+                <div class="footer-meta">평일 08:00 - 22:00 (토/일/공휴일 휴무)</div>
+            </div>
+            <div class="footer-meta">
+                브라더상품권 · 안전하고 빠른 상품권 매입 서비스<br>
+                © 2024 Brother Giftcard. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const brandItems = document.querySelectorAll('.brand-item');
+        const brandInput = document.getElementById('brand');
+        const buyRateInput = document.getElementById('buyRate');
+        const currentRateDisplay = document.getElementById('currentRate');
+
+        brandItems.forEach(item => {
+            item.addEventListener('click', function() {
+                brandItems.forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+
+                const brand = this.dataset.brand;
+                const rate = this.dataset.rate;
+                brandInput.value = brand;
+                buyRateInput.value = rate;
+
+                if (currentRateDisplay) {
+                    currentRateDisplay.textContent = rate + '%';
+                }
+
+                calculatePayment();
+            });
+        });
+
+        const pinInput = document.getElementById('pin');
+        pinInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 16) {
+                value = value.slice(0, 16);
+            }
+            const formatted = value.match(/.{1,4}/g)?.join('-') || value;
+            e.target.value = formatted;
+        });
+
+        const amountInput = document.getElementById('amount');
+        const calculationDisplay = document.getElementById('calculationDisplay');
+
+        amountInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value) {
+                e.target.value = parseInt(value).toLocaleString('ko-KR');
+            } else {
+                e.target.value = '';
+            }
+            calculatePayment();
+        });
+
+        function calculatePayment() {
+            const amount = parseInt(amountInput.value.replace(/,/g, '')) || 0;
+            const rate = parseFloat(buyRateInput.value) || 0;
+
+            if (amount > 0 && rate > 0) {
+                const payment = Math.floor(amount * rate / 100);
+                calculationDisplay.classList.add('show');
+                document.getElementById('displayAmount').textContent = amount.toLocaleString('ko-KR') + '원';
+                document.getElementById('displayRate').textContent = rate + '%';
+                document.getElementById('displayPayment').textContent = payment.toLocaleString('ko-KR') + '원';
+            } else {
+                calculationDisplay.classList.remove('show');
+            }
+        }
+
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) {
+                value = value.slice(0, 11);
+            }
+            let formatted = '';
+            if (value.length <= 3) {
+                formatted = value;
+            } else if (value.length <= 7) {
+                formatted = value.slice(0, 3) + '-' + value.slice(3);
+            } else {
+                formatted = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7);
+            }
+            e.target.value = formatted;
+        });
+
+        const form = document.getElementById('applyForm');
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            if (!brandInput.value) {
+                alert('상품권 종류를 선택해주세요.');
+                return;
+            }
+
+            const pin = pinInput.value.replace(/\D/g, '');
+            if (pin.length !== 16) {
+                alert('핀번호 16자리를 정확히 입력해주세요.');
+                pinInput.focus();
+                return;
+            }
+
+            const amount = parseInt(amountInput.value.replace(/,/g, ''));
+            if (!amount || amount < 10000) {
+                alert('금액을 정확히 입력해주세요. (최소 10,000원)');
+                amountInput.focus();
+                return;
+            }
+
+            const phone = phoneInput.value.replace(/\D/g, '');
+            if (phone.length !== 11) {
+                alert('휴대폰 번호 11자리를 정확히 입력해주세요.');
+                phoneInput.focus();
+                return;
+            }
+
+            const accountValue = document.getElementById('account').value.trim();
+            if (accountValue.length < 5) {
+                alert('입금받을 계좌 정보를 정확히 입력해주세요.');
+                document.getElementById('account').focus();
+                return;
+            }
+
+            const submitBtn = form.querySelector('.btn-submit');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 처리중...';
+
+            try {
+                const { data: brandData, error: brandError } = await supabaseClient
+                    .from('giftcard_brands')
+                    .select('id, buy_rate')
+                    .eq('brand_code', brandInput.value)
+                    .eq('is_active', true)
+                    .single();
+
+                if (brandError) {
+                    throw new Error('상품권 브랜드 정보를 찾을 수 없습니다.');
+                }
+
+                const paymentAmount = Math.floor(amount * brandData.buy_rate / 100);
+                const pinEncrypted = btoa(pin);
+
+                const { data: purchaseData, error: purchaseError } = await supabaseClient
+                    .from('purchase_requests')
+                    .insert({
+                        brand_id: brandData.id,
+                        brand_code: brandInput.value,
+                        amount: amount,
+                        pin_encrypted: pinEncrypted,
+                        customer_name: '고객',
+                        customer_phone: phoneInput.value,
+                        account_info: accountValue,
+                        buy_rate: brandData.buy_rate,
+                        payment_amount: paymentAmount,
+                        status: 'pending'
+                    })
+                    .select()
+                    .single();
+
+                if (purchaseError) {
+                    console.error('Purchase error:', purchaseError);
+                    throw purchaseError;
+                }
+
+                alert(
+                    '매입 신청이 접수되었습니다.\n\n' +
+                    `상품권 종류: ${getBrandName(brandInput.value)}\n` +
+                    `상품권 금액: ${amount.toLocaleString()}원\n` +
+                    `매입률: ${brandData.buy_rate}%\n` +
+                    `입금 예정액: ${paymentAmount.toLocaleString()}원\n\n` +
+                    '핀번호 확인 후 3분 이내에 입금해드리겠습니다.'
+                );
+
+                form.reset();
+                brandItems.forEach(b => b.classList.remove('selected'));
+                calculationDisplay.classList.remove('show');
+                brandInput.value = '';
+                buyRateInput.value = '';
+                if (currentRateDisplay) {
+                    currentRateDisplay.textContent = '96.5%';
+                }
+
+            } catch (error) {
+                console.error('Submit error:', error);
+                alert((error.message || '오류가 발생했습니다. 다시 시도해주시거나 고객센터로 문의해주세요.') + '\n문의: 02-541-0656');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+
+        function getBrandName(brandCode) {
+            const brandNames = {
+                'hyundai': '현대백화점',
+                'galleria': '갤러리아',
+                'shinsegae': '신세계',
+                'lotte': '롯데백화점',
+                'hanwha': '한화갤러리아',
+                'ak': 'AK플라자',
+                'emart': '이마트',
+                'cultureland': '컬처랜드'
+            };
+            return brandNames[brandCode] || brandCode;
+        }
+
+        const realtimeList = document.getElementById('realtimeList');
+        const todayCountEl = document.getElementById('todayCount');
+        let todayCount = 0;
+
+        const brands = ['현대백화점', '갤러리아', '신세계', '롯데', '한화갤러리아', 'AK플라자', '이마트', '컬처랜드'];
+        const amounts = [50000, 100000, 200000, 300000, 500000, 1000000];
+
+        function generateRandomItem() {
+            const phone = '010-' +
+                          String(Math.floor(Math.random() * 10000)).padStart(4, '0') + '-' +
+                          '****';
+            const brand = brands[Math.floor(Math.random() * brands.length)];
+            const amount = amounts[Math.floor(Math.random() * amounts.length)];
+            const minutes = Math.floor(Math.random() * 30);
+            const time = minutes === 0 ? '방금 전' : `${minutes}분 전`;
+
+            return { phone, brand, amount, time };
+        }
+
+        function addRealtimeItem(item) {
+            const itemEl = document.createElement('div');
+            itemEl.className = 'realtime-item';
+            itemEl.innerHTML = `
+                <div class="realtime-phone">${item.phone}</div>
+                <div class="realtime-details">
+                    ${item.brand} <span class="realtime-amount">${item.amount.toLocaleString()}원</span> 매입
+                </div>
+                <div class="realtime-time">${item.time}</div>
+            `;
+
+            realtimeList.insertBefore(itemEl, realtimeList.firstChild);
+
+            while (realtimeList.children.length > 10) {
+                realtimeList.removeChild(realtimeList.lastChild);
+            }
+
+            todayCount++;
+            todayCountEl.textContent = todayCount;
+        }
+
+        function initializeRealtimeStatus() {
+            for (let i = 0; i < 5; i++) {
+                const item = generateRandomItem();
+                setTimeout(() => addRealtimeItem(item), i * 200);
+            }
+
+            setInterval(() => {
+                const item = generateRandomItem();
+                addRealtimeItem(item);
+            }, Math.random() * 3000 + 5000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('브라더상품권 핀매입 페이지 로드 완료');
+            console.log('Supabase 연결 상태:', supabaseClient ? 'connected' : 'not initialized');
+            initializeRealtimeStatus();
+        });
+    </script>
+</body>
+</html>

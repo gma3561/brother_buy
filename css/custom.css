@@ -1,0 +1,300 @@
+/* Custom Styles for Brother Gift Card Purchase Site */
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #3a3234;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styles */
+.main-header {
+    transition: all 0.3s ease;
+}
+
+.main-header .navbar {
+    padding: 15px 0;
+}
+
+.main-header .navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.main-header .navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.main-header .nav-link {
+    color: #3a3234 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.main-header .nav-link:hover {
+    color: #daa549 !important;
+}
+
+.main-header .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #daa549;
+    transition: width 0.3s;
+}
+
+.main-header .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(218,165,73,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Feature Box */
+.feature-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    transition: transform 0.3s;
+}
+
+.feature-box:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* Brand Card */
+.brand-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    border: 1px solid #e9ecef;
+}
+
+.brand-card:hover {
+    border-color: #daa549;
+    box-shadow: 0 5px 20px rgba(218,165,73,0.2);
+}
+
+.brand-card img {
+    transition: transform 0.3s;
+}
+
+.brand-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Process Step */
+.process-step {
+    transition: transform 0.3s;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    transition: all 0.3s;
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(218,165,73,0.3);
+}
+
+/* Table Styles */
+.table thead th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Button Styles */
+.btn {
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn[style*="background-color: #daa549"]:hover {
+    background-color: #c8953a !important;
+}
+
+/* Form Styles */
+.form-control {
+    transition: border-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #daa549;
+    box-shadow: 0 0 0 0.2rem rgba(218,165,73,0.25);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Contact Info */
+.contact-info {
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    transition: transform 0.3s;
+}
+
+.contact-info:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #daa549 !important;
+}
+
+.social-links a {
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #daa549 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll to top button (optional) */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #daa549;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #c8953a;
+    transform: translateY(-5px);
+}
+
+.scroll-to-top.show {
+    display: flex;
+}
+
+
+

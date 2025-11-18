@@ -1,0 +1,44 @@
+
+  @media (max-width: 1024px) {
+    #excel-price h2.title {
+      font-size: 1.6rem !important;
+    }
+    #excel-price p.title-sub {
+      font-size: 0.9rem !important;
+    }
+    #excel-price iframe {
+      height: 800px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #excel-price h2.title {
+      font-size: 1.4rem !important;
+    }
+    #excel-price p.title-sub {
+      font-size: 0.8rem !important;
+    }
+    #excel-price iframe {
+      height: 900px !important;
+    }
+    #excel-price a {
+      font-size: 0.95rem !important;
+      padding: 9px 18px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #excel-price h2.title {
+      font-size: 1.2rem !important;
+    }
+    #excel-price p.title-sub {
+      font-size: 0.75rem !important;
+    }
+    #excel-price iframe {
+      height: 950px !important;
+    }
+    #excel-price a {
+      font-size: 0.9rem !important;
+      padding: 8px 16px !important;
+    }
+  }

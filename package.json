@@ -1,0 +1,18 @@
+{
+  "name": "brother-buy",
+  "version": "1.0.0",
+  "description": "브라더상품권 매입 플랫폼",
+  "scripts": {
+    "deploy": "gh-pages -d . -m 'Deploy to GitHub Pages'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gma3561/brother_buy.git"
+  },
+  "keywords": ["giftcard", "brother"],
+  "author": "Lucas Ha",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}

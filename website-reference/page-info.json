@@ -1,0 +1,822 @@
+{
+  "title": "상품권은 브라더상품권 - 압구정상품권/신사동상품권",
+  "url": "https://brothergift.free.nowhosting.kr/",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0",
+    "google-site-verification": "ehaVk9DcvZSxUjduXCcKqEG9GtkxiEs-DrhT_VI_ooQ",
+    "Title": "상품권은 브라더상품권 - 신사동상품권 / 압구정상품권",
+    "Keywords": "백화점상품권, 압구정상품권, 신사동상품권, 현대상품권, 갤러리아상품권, 현대백화점상품권, 갤러리아백화점상품권, 롯데상품권, 롯데백화점상품권, 신세계상품권, 신세계백화점상품권",
+    "Description": "대한민국 상품권은 브라더상품권! 최고가 매입 최저가 판매! 압구정상품권도 신사동상품권도 브라더상품권입니다!",
+    "author": "@xn--zf0bq3igzd8picsd714b.com",
+    "og:url": "http://xn--zf0bq3igzd8picsd714b.com/",
+    "og:description": "대한민국 상품권은 브라더상품권! 최고가 매입 최저가 판매! 압구정상품권도 신사동상품권도 브라더상품권입니다!",
+    "og:title": "상품권은 브라더상품권 - 신사동상품권 / 압구정상품권",
+    "og:keywords": "백화점상품권, 압구정상품권, 신사동상품권, 현대상품권, 갤러리아상품권, 현대백화점상품권, 갤러리아백화점상품권, 롯데상품권, 롯데백화점상품권, 신세계상품권, 신세계백화점상품권",
+    "og:type": "website",
+    "og:image": "https://xn--zf0bq3igzd8picsd714b.com/images/og.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:site": "http://xn--zf0bq3igzd8picsd714b.com/",
+    "twitter:title": "상품권은 브라더상품권 - 신사동상품권 / 압구정상품권",
+    "twitter:description": "대한민국 상품권은 브라더상품권! 최고가 매입 최저가 판매! 압구정상품권도 신사동상품권도 브라더상품권입니다!",
+    "twitter:keywords": "백화점상품권, 압구정상품권, 신사동상품권, 현대상품권, 갤러리아상품권, 현대백화점상품권, 갤러리아백화점상품권, 롯데상품권, 롯데백화점상품권, 신세계상품권, 신세계백화점상품권",
+    "twitter:image": "https://xn--zf0bq3igzd8picsd714b.com/images/og.jpg",
+    "twitter:creator": "@xn--zf0bq3igzd8picsd714b.com"
+  },
+  "colors": {
+    "text": [
+      "rgb(0, 0, 0)",
+      "rgb(119, 119, 119)",
+      "rgb(255, 255, 255)",
+      "rgb(58, 50, 52)",
+      "rgb(128, 128, 128)",
+      "rgb(218, 165, 73)",
+      "rgb(73, 80, 87)",
+      "rgb(33, 37, 41)",
+      "rgb(153, 153, 153)"
+    ],
+    "background": [
+      "rgb(255, 255, 255)",
+      "rgb(58, 50, 52)",
+      "rgba(0, 0, 0, 0.5)",
+      "rgba(255, 255, 255, 0.4)",
+      "rgb(0, 123, 255)",
+      "rgb(218, 165, 73)",
+      "rgb(0, 51, 153)"
+    ],
+    "border": [
+      "rgb(0, 0, 0)",
+      "rgb(119, 119, 119)",
+      "rgba(255, 255, 255, 0.1)",
+      "rgb(255, 255, 255)",
+      "rgb(58, 50, 52)",
+      "rgb(128, 128, 128) rgb(128, 128, 128) rgba(0, 0, 0, 0.1)",
+      "rgb(218, 165, 73)",
+      "rgba(255, 255, 255, 0.15)",
+      "rgba(255, 255, 255, 0.4)",
+      "rgba(0, 0, 0, 0.15)",
+      "rgb(33, 37, 41)",
+      "rgb(128, 128, 128)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)",
+      "rgb(153, 153, 153)"
+    ]
+  },
+  "fonts": {
+    "families": [
+      "sans-serif",
+      "\"Open Sans\", sans-serif",
+      "Pe-icon-7-stroke",
+      "\"Font Awesome 5 Free\"",
+      "Montserrat",
+      "\"Open Sans\""
+    ],
+    "sizes": [
+      "13px",
+      "14px",
+      "15.2px",
+      "16px",
+      "18px",
+      "20px",
+      "24px",
+      "26px",
+      "28.8px",
+      "30px",
+      "36px",
+      "40px",
+      "50px",
+      "70px",
+      "80px"
+    ]
+  },
+  "images": [
+    {
+      "index": 0,
+      "src": "https://brothergift.free.nowhosting.kr/images/logo-light.png",
+      "alt": "Brand logo",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 1,
+      "src": "https://brothergift.free.nowhosting.kr/images/logo-light.png",
+      "alt": "App logo",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 2,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo1_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 3,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo2_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 4,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo3_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 5,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo4_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 6,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo5_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 7,
+      "src": "https://brothergift.free.nowhosting.kr/images/brand-logo6_light.png",
+      "alt": "brand",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 8,
+      "src": "https://brothergift.free.nowhosting.kr/images/iphone-img-11.png",
+      "alt": "image",
+      "width": 300,
+      "height": 883,
+      "className": "mr-auto",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 9,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-01.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 10,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-02.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 11,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-03.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 12,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-04.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 13,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-05.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 14,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-06.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 15,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-07.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 16,
+      "src": "https://brothergift.free.nowhosting.kr/images/app-img-08.jpg",
+      "alt": "image",
+      "width": 375,
+      "height": 667,
+      "className": "",
+      "id": "",
+      "title": ""
+    },
+    {
+      "index": 17,
+      "src": "https://brothergift.free.nowhosting.kr/images/logos.png",
+      "alt": "logo",
+      "width": 540,
+      "height": 200,
+      "className": "",
+      "id": "",
+      "title": ""
+    }
+  ],
+  "backgroundImages": [
+    {
+      "src": "https://brothergift.free.nowhosting.kr/images/bg-app-01.jpg",
+      "element": "DIV",
+      "className": "vegas-slide-inner vegas-animation-kenburns",
+      "id": "",
+      "text": ""
+    },
+    {
+      "src": "https://brothergift.free.nowhosting.kr/images/bg-app-03.jpg",
+      "element": "DIV",
+      "className": "vegas-slide-inner vegas-animation-kenburns",
+      "id": "",
+      "text": ""
+    },
+    {
+      "src": "https://brothergift.free.nowhosting.kr/images/bg-app-03.jpg",
+      "element": "DIV",
+      "className": "full-vh bg-cc bg-cover",
+      "id": "",
+      "text": ""
+    }
+  ],
+  "links": [
+    {
+      "href": "",
+      "text": "",
+      "className": "nav-handle",
+      "id": ""
+    },
+    {
+      "href": "http://xn--zf0bq3igzd8picsd714b.com/",
+      "text": "",
+      "className": "header-logo pd-tb-small",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/#features",
+      "text": "브라더상품권",
+      "className": "",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/#private",
+      "text": "압구정상품권",
+      "className": "",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/#gallery",
+      "text": "신사동상품권",
+      "className": "",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/#testimonials",
+      "text": "상품권",
+      "className": "",
+      "id": ""
+    },
+    {
+      "href": "tel:010-8188-0656",
+      "text": "브라더상품권문의",
+      "className": "btn btn-white mini",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/#",
+      "text": "",
+      "className": "inline-block max-px-w100 mr-b-30",
+      "id": ""
+    },
+    {
+      "href": "tel:010-8188-0656",
+      "text": "매장문의02-541-0656",
+      "className": "btn btn-default bdr-3 rd-10 large wrap-normal lh-5",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-01.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-02.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-03.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-04.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-05.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-06.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-07.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "https://brothergift.free.nowhosting.kr/images/app-img-08.jpg",
+      "text": "",
+      "className": "pop-img",
+      "id": ""
+    },
+    {
+      "href": "tel:01081880656",
+      "text": " 시세 문의하기",
+      "className": "",
+      "id": ""
+    },
+    {
+      "href": "http://xn--zf0bq3igzd8picsd714b.com/",
+      "text": "",
+      "className": "inline-block max-px-w200 mr-3",
+      "id": ""
+    }
+  ],
+  "structure": {
+    "headings": {
+      "h1": [
+        {
+          "text": "상품권은 브라더상품권",
+          "class": "title large mr-0"
+        }
+      ],
+      "h2": [
+        {
+          "text": "압구정상품권 / 신사동상품권 / 백화점상품권 / 각종상품권",
+          "class": "title small bold-n mr-b-40"
+        },
+        {
+          "text": "상품권은 브라더상품권! GiftCard is Brother!",
+          "class": "title f-1"
+        },
+        {
+          "text": "상품권 최다 거래매장!",
+          "class": "title fs70 txt-default f-1"
+        },
+        {
+          "text": "브라더상품권",
+          "class": "title mr-b-50 f-1"
+        },
+        {
+          "text": "상품권은 브라더상품권! GiftCard is Brother!",
+          "class": "title f-1"
+        },
+        {
+          "text": "DROP US A LINE",
+          "class": "title mr-0"
+        }
+      ],
+      "h3": [
+        {
+          "text": "상품권최고가매입",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "신사동백화점상품권",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "압구정상품권전문매장",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "상품권최저가판매",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "현대백화점상품권",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "갤러리아백화점상품권",
+          "class": "title mini bold-n f-1"
+        },
+        {
+          "text": "압구정상품권/신사동상품권 매장 중최대 거래매장입니다!",
+          "class": "title bold-n mr-0"
+        },
+        {
+          "text": "압구정 현대백화점",
+          "class": "title mini bold-n mr-b-4 f-1"
+        },
+        {
+          "text": "압구정 상품권",
+          "class": "title mini bold-n mr-b-4 f-1"
+        },
+        {
+          "text": "신사동 상품권",
+          "class": "title mini bold-n mr-b-4 f-1"
+        }
+      ],
+      "h4": []
+    },
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "pd-tb-small vh100 flex-bc pos-rel typo-light",
+        "id": "",
+        "textPreview": "상품권은 브라더상품권\n        \n        \n          압구정상품권 / 신사동상품권 / 백화점상품권 / 각종상품권\n        \n        \n         "
+      },
+      {
+        "tag": "SECTION",
+        "className": "pos-rel pd-tb-small",
+        "id": "features",
+        "textPreview": "상품권은 브라더상품권! GiftCard is Brother!\n        \n          대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!"
+      },
+      {
+        "tag": "SECTION",
+        "className": "pd-tb-small pos-rel",
+        "id": "",
+        "textPreview": "상품권 최다 거래매장!\n          \n          \n            압구정상품권/신사동상품권 매장 중최대 거래매장입니다!\n          \n        \n   "
+      },
+      {
+        "tag": "SECTION",
+        "className": "pos-rel pd-tb-small bg-dark",
+        "id": "gallery",
+        "textPreview": "브라더상품권\n          \n          \n            \n              \n            \n            \n              압구정"
+      },
+      {
+        "tag": "SECTION",
+        "className": "pos-rel pd-tb-small",
+        "id": "excel-price",
+        "textPreview": "상품권은 브라더상품권! GiftCard is Brother!\n      \n        대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!\n   "
+      }
+    ],
+    "navigation": [
+      {
+        "className": "menu-wrp align-l",
+        "id": "",
+        "items": [
+          "브라더상품권",
+          "압구정상품권",
+          "신사동상품권",
+          "상품권"
+        ]
+      }
+    ],
+    "forms": [
+      {
+        "action": "https://brothergift.free.nowhosting.kr/form-data/formdata.php",
+        "method": "get",
+        "className": "form-widget",
+        "id": ""
+      }
+    ]
+  },
+  "textContent": {
+    "mainParagraphs": [
+      "브라더상품권\n                  압구정상품권\n                  신사동상품권\n                  상품권\n                \n              \n            \n            \n              \n                브라더상품권문의\n              \n            \n          \n        \n        \n\n      \n    \n  \n  \n\n  \n  \n    \n      \n      \n        \n          \n        \n        \n          상품권은 브라더상품권\n        \n        \n          압구정상품권 / 신사동상품권 / 백화점상품권 / 각종상품권\n        \n        \n          현대백화점 상품권, 갤러리아백화점 상품권\n          상품권은 모두 브라더상품권이 책임지겠습니다!\n        \n      \n\n      \n      \n\n      \n      \n        \n        \n        \n        \n        \n        \n      \n    \n\n    \n      \n      \n    \n  \n  \n\n  \n  \n    \n      \n        상품권은 브라더상품권! GiftCard is Brother!\n        \n          대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!\n        \n        \n      \n\n      \n        \n        \n          \n            \n              \n            \n            \n              상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~\n            \n          \n        \n\n        \n        \n          \n        \n\n        \n        \n          \n            \n              \n            \n            \n              상품권최저가판매\n              대한민국 상품권 모두 최저가 판매!\n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              현대백화점상품권\n              \n                강남구 최대할인압구정 최대할인현대백화점 상품권 최대할인\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              갤러리아백화점상품권\n              \n                신사동 최대할인갤러리아백화점\n              \n            \n          \n        \n      \n    \n  \n  \n\n  \n  \n    \n      \n        \n          \n            상품권 최다 거래매장!\n          \n          \n            압구정상품권/신사동상품권 매장 중최대 거래매장입니다!\n          \n        \n        \n          \n            매장문의02-541-0656\n          \n        \n      \n    \n    \n    \n  \n\n  \n  \n    \n      \n        \n          \n            브라더상품권\n          \n          \n            \n              \n            \n            \n              압구정 현대백화점\n              매장까지 딜리버리 서비스\n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              압구정 상품권\n              \n                현대백화점 상품권, 갤러리아백화점 상품권 전문! 최대 할인!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              신사동 상품권\n              대한민국 백화점 상품권 최대 할인!\n            \n          \n        \n\n        \n          \n          \n            \n              \n              \n              \n              \n              \n              \n              \n              \n            \n                \n              \n                \n              \n                \n              \n                \n              \n                \n              \n                \n              \n                \n              \n                \n              \n          \n          \n        \n      \n    \n  \n  \n\n  \n\n  \n    \n      상품권은 브라더상품권! GiftCard is Brother!\n      \n        대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!\n      \n      \n    \n\n    \n      \n\t \n        \n        \n      \n\n      \n      \n        \n           시세 문의하기\n        \n      \n    \n  \n\n\n\n  @media (max-width: 1024px) {\n    #excel-price h2.title {\n      font-size: 1.6rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.9rem !important;\n    }\n    #excel-price iframe {\n      height: 800px !important;\n    }\n  }\n\n  @media (max-width: 768px) {\n    #excel-price h2.title {\n      font-size: 1.4rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.8rem !important;\n    }\n    #excel-price iframe {\n      height: 900px !important;\n    }\n    #excel-price a {\n      font-size: 0.95rem !important;\n      padding: 9px 18px !important;\n    }\n  }\n\n  @media (max-width: 480px) {\n    #excel-price h2.title {\n      font-size: 1.2rem !important;\n    }\n    #excel-price p.title-sub {\n      font-size: 0.75rem !important;\n    }\n    #excel-price iframe {\n      height: 950px !important;\n    }\n    #excel-price a {\n      font-size: 0.9rem !important;\n      padding: 8px 16px !important;\n    }\n  }\n\n\n\n\n\n\n  \n\n\n  \n    \n    \n      \n      \n        \n        \n        \n          \n        \n\n        \n        \n          \n            브라더상품권 주식회사\n            서울특별시 강남구 압구정로 162, 1층 브라더상품권\n            T 02-541-0656 / M 010-8188-0656\n          \n        \n\n      \n    \n  \n\n\n  \n\n  \n  \n    \n      \n      DROP US A LINE\n    \n    \n      \n        \n          \n            \n            \n              \n            \n            \n              \n            \n            \n              \n            \n            \n              \n            \n            \n              \n            \n            \n              \n            \n          \n          \n             SUBMIT\n          \n        \n      \n    \n  \n  \n\n  \n  \n  /* Use fonts with class name in sequence => f-1, f-2, f-3 .... */\n  var fgroup = [\n    'Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i',\n    'Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i'\n  ];",
+      "브라더상품권\n                  압구정상품권\n                  신사동상품권\n                  상품권\n                \n              \n            \n            \n              \n                브라더상품권문의",
+      "브라더상품권\n                  압구정상품권\n                  신사동상품권\n                  상품권\n                \n              \n            \n            \n              \n                브라더상품권문의",
+      "브라더상품권\n                  압구정상품권\n                  신사동상품권\n                  상품권\n                \n              \n            \n            \n              \n                브라더상품권문의",
+      "상품권은 브라더상품권\n        \n        \n          압구정상품권 / 신사동상품권 / 백화점상품권 / 각종상품권\n        \n        \n          현대백화점 상품권, 갤러리아백화점 상품권\n          상품권은 모두 브라더상품권이 책임지겠습니다!",
+      "상품권은 브라더상품권\n        \n        \n          압구정상품권 / 신사동상품권 / 백화점상품권 / 각종상품권\n        \n        \n          현대백화점 상품권, 갤러리아백화점 상품권\n          상품권은 모두 브라더상품권이 책임지겠습니다!",
+      "현대백화점 상품권, 갤러리아백화점 상품권\n          상품권은 모두 브라더상품권이 책임지겠습니다!",
+      "상품권은 브라더상품권! GiftCard is Brother!\n        \n          대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!\n        \n        \n      \n\n      \n        \n        \n          \n            \n              \n            \n            \n              상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~\n            \n          \n        \n\n        \n        \n          \n        \n\n        \n        \n          \n            \n              \n            \n            \n              상품권최저가판매\n              대한민국 상품권 모두 최저가 판매!\n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              현대백화점상품권\n              \n                강남구 최대할인압구정 최대할인현대백화점 상품권 최대할인\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              갤러리아백화점상품권\n              \n                신사동 최대할인갤러리아백화점",
+      "상품권은 브라더상품권! GiftCard is Brother!\n        \n          대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!",
+      "대한민국 상품권! 압구정역 상품권! 신사동 상품권! 모두 브라더상품권에서 만나보세요!",
+      "상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~\n            \n          \n        \n\n        \n        \n          \n        \n\n        \n        \n          \n            \n              \n            \n            \n              상품권최저가판매\n              대한민국 상품권 모두 최저가 판매!\n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              현대백화점상품권\n              \n                강남구 최대할인압구정 최대할인현대백화점 상품권 최대할인\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              갤러리아백화점상품권\n              \n                신사동 최대할인갤러리아백화점",
+      "상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!\n              \n            \n          \n\n          \n\n          \n            \n              \n            \n            \n              압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~",
+      "상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!",
+      "상품권최고가매입\n              \n                현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!",
+      "현대백화점/갤러리아백화점/롯데백화점/신세계백화점 모두 최고가 매입!",
+      "신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!",
+      "신사동백화점상품권\n              \n                강남구 상품권, 신사동 상품권 문의환영!",
+      "강남구 상품권, 신사동 상품권 문의환영!",
+      "압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~",
+      "압구정상품권전문매장\n              압구정, 신사동 상품권 딜리버리 서비스~"
+    ]
+  },
+  "buttons": [
+    {
+      "tag": "A",
+      "text": "브라더상품권문의",
+      "className": "btn btn-white mini",
+      "id": "",
+      "type": ""
+    },
+    {
+      "tag": "A",
+      "text": "매장문의02-541-0656",
+      "className": "btn btn-default bdr-3 rd-10 large wrap-normal lh-5",
+      "id": "",
+      "type": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "SUBMIT",
+      "className": "btn solid btn-default block",
+      "id": "",
+      "type": "submit"
+    }
+  ],
+  "cssClasses": [
+    "data-sticky",
+    "wf-opensans-n6-active",
+    "wf-opensans-n7-active",
+    "wf-opensans-n8-active",
+    "wf-opensans-n4-active",
+    "wf-opensans-n3-active",
+    "wf-montserrat-i6-active",
+    "wf-montserrat-i3-active",
+    "wf-montserrat-i4-active",
+    "wf-montserrat-i1-active",
+    "wf-montserrat-i9-active",
+    "wf-montserrat-i8-active",
+    "wf-montserrat-i2-active",
+    "wf-montserrat-i7-active",
+    "wf-montserrat-i5-active",
+    "wf-opensans-i4-active",
+    "wf-opensans-i6-active",
+    "wf-opensans-i8-active",
+    "wf-opensans-i3-active",
+    "wf-opensans-i7-active",
+    "wf-montserrat-n3-active",
+    "wf-montserrat-n6-active",
+    "wf-montserrat-n7-active",
+    "wf-montserrat-n9-active",
+    "wf-montserrat-n1-active",
+    "wf-montserrat-n8-active",
+    "wf-montserrat-n2-active",
+    "wf-montserrat-n5-active",
+    "wf-montserrat-n4-active",
+    "wf-active",
+    "main-head",
+    "dark",
+    "bg-op-02",
+    "header-hide",
+    "fixed-top",
+    "container",
+    "bdr-b",
+    "bdr-op-light-1",
+    "min-px-h8",
+    "row",
+    "gt0",
+    "align-items-center",
+    "head-row",
+    "col-lg-2",
+    "pos-rel",
+    "nav-handle",
+    "pe-7s-more",
+    "header-logo-wrp",
+    "header-logo",
+    "pd-tb-small",
+    "col-lg-10",
+    "align-r",
+    "m-content",
+    "gt20",
+    "justify-content-md-end",
+    "mr-0",
+    "col-lg-auto",
+    "menu-wrp",
+    "align-l",
+    "menu",
+    "menu-item",
+    "btn",
+    "btn-white",
+    "mini",
+    "far",
+    "fa-envelope",
+    "mr-r-5",
+    "vh100",
+    "flex-bc",
+    "typo-light",
+    "z2",
+    "align-c",
+    "w75",
+    "mr-auto",
+    "mr-b-60",
+    "animated",
+    "fadeIn",
+    "full-visible",
+    "inline-block",
+    "max-px-w100",
+    "mr-b-30",
+    "title",
+    "large",
+    "small",
+    "bold-n",
+    "mr-b-40",
+    "title-sub",
+    "mr-tb-60",
+    "middle-md",
+    "inline-list",
+    "gt-small",
+    "size-mini",
+    "reset",
+    "op-05",
+    "full-wh",
+    "bg-dark",
+    "op-02",
+    "z1",
+    "bgslider",
+    "bg-cover",
+    "vegas-container",
+    "vegas-slide",
+    "vegas-transition-fade",
+    "vegas-transition-fade-in",
+    "vegas-transition-fade-out",
+    "vegas-slide-inner",
+    "vegas-animation-kenburns",
+    "vegas-wrapper",
+    "f-1",
+    "f-2",
+    "mr-tb-50",
+    "mb20",
+    "col-md-3",
+    "info-obj",
+    "img-t",
+    "g10",
+    "mr-b-20",
+    "img",
+    "txt-default",
+    "iconwrp",
+    "pe-7s-photo",
+    "info",
+    "mr-t-30",
+    "pe-7s-light",
+    "pe-7s-map-2",
+    "col-md-6",
+    "pe-7s-chat",
+    "pe-7s-compass",
+    "pe-7s-add-user",
+    "flex-cc",
+    "col-md-8",
+    "fs70",
+    "offset-md-1",
+    "btn-default",
+    "bdr-3",
+    "rd-10",
+    "wrap-normal",
+    "lh-5",
+    "op-09",
+    "full-vh",
+    "bg-cc",
+    "col-md-4",
+    "last-md",
+    "mr-b-50",
+    "img-l",
+    "g20",
+    "pe-7s-paint-bucket",
+    "mr-b-4",
+    "light",
+    "pe-7s-photo-gallery",
+    "col-md-7",
+    "carousel-widget",
+    "ctrl-1",
+    "popgallery-widget",
+    "ctrl-light",
+    "owl0",
+    "popgallery0",
+    "owl-carousel",
+    "owl-loaded",
+    "owl-drag",
+    "owl-stage-outer",
+    "owl-stage",
+    "owl-item",
+    "active",
+    "item",
+    "content",
+    "pop-img",
+    "owl-nav",
+    "owl-prev",
+    "disabled",
+    "fa",
+    "fa-angle-left",
+    "owl-next",
+    "fa-angle-right",
+    "owl-dots",
+    "owl-dot",
+    "mr-tb-40",
+    "col-12",
+    "bg-white",
+    "justify-content-center",
+    "col-auto",
+    "d-flex",
+    "text-center",
+    "max-px-w200",
+    "mr-3",
+    "mb-0",
+    "white-popup-block",
+    "popup-content",
+    "mfp-hide",
+    "pop-header",
+    "pd-b-0",
+    "sq90",
+    "inline-flex",
+    "fs80",
+    "txt-color4",
+    "pe-7s-mail",
+    "pop-body",
+    "form-block",
+    "form-widget",
+    "field-wrp",
+    "form-group",
+    "form-control",
+    "datetime-pick",
+    "solid",
+    "block",
+    "fa-envelope-o",
+    "datetimepicker",
+    "datetimepicker-dropdown-bottom-right",
+    "dropdown-menu",
+    "datetimepicker-minutes",
+    "table-condensed",
+    "prev",
+    "glyphicon",
+    "glyphicon-arrow-left",
+    "switch",
+    "next",
+    "glyphicon-arrow-right",
+    "minute",
+    "today",
+    "clear",
+    "datetimepicker-hours",
+    "hour",
+    "datetimepicker-days",
+    "dow",
+    "day",
+    "old",
+    "new",
+    "datetimepicker-months",
+    "month",
+    "datetimepicker-years",
+    "year"
+  ]
+}
